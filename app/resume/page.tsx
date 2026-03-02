@@ -1,6 +1,115 @@
+"use client";
+
+import { motion } from "framer-motion";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { Data } from "@/constants/data";
+import TabResumeContent from "@/components/resume/TabResumeContent";
+import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
+
 const Resume = () => {
   return (
-    <div>Resume</div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+      }}
+      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
+    >
+      <div className="container mx-auto">
+        <Tabs
+          defaultValue="experiences"
+          className="flex flex-col xl:flex-row gap-15"
+        >
+          <TabsList className="flex flex-col w-full max-w-95 mx-auto xl:mx-0">
+            <TabsTrigger value="experiences">Experiences</TabsTrigger>
+            <TabsTrigger value="educations">Educations</TabsTrigger>
+            <TabsTrigger value="skills">Skills</TabsTrigger>
+            <TabsTrigger value="about">About Me</TabsTrigger>
+          </TabsList>
+          <div className="min-h-[70vh] w-full">
+            <TabsContent value="experiences" className="w-full">
+              <TabResumeContent
+                title={Data.experiences.title}
+                description={Data.experiences.description}
+                items={Data.experiences.items}
+                type="experiences"
+              />
+            </TabsContent>
+            <TabsContent value="educations" className="w-full">
+              <TabResumeContent
+                title={Data.educations.title}
+                description={Data.educations.description}
+                items={Data.educations.items}
+                type="educations"
+              />
+            </TabsContent>
+            <TabsContent value="skills" className="w-full h-full">
+              <div className="flex flex-col gap-7.5">
+                <div className="flex flex-col gap-7.5 text-center xl:text-left">
+                  <h3 className="text-4xl font-bold">
+                    {Data.skills.title}
+                  </h3>
+                  <p className="max-w-150 text-white/60 mx-auto xl:mx-0">
+                    {Data.skills.description}
+                  </p>
+                </div>
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-7.5">
+                  {Data.skills.skillLists.map((item, index) => {
+                    return (
+                      <li key={index}>
+                        <TooltipProvider delayDuration={100}>
+                          <Tooltip>
+                            <TooltipTrigger className="w-full h-37.5 bg-[#232329] rounded-xl flex justify-center items-center group">
+                              <div className="text-6xl group-hover:text-accent transition-all duration-300">
+                                {item.icon}
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p className="capitalize">
+                                {item.name}
+                              </p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                        {item.name}
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
+            <TabsContent value="about" className="w-full text-center xl:text-left">
+              <div className="flex flex-col gap-7.5">
+                <h3 className="text-4xl font-bold">
+                  {Data.about.title}
+                </h3>
+                <p className="max-w-150 text-white/60 mx-auto xl:mx-0">
+                  {Data.about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-155 mx-auto xl:mx-0">
+                  {Data.about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">
+                          {item.field_name}
+                        </span>
+                        <span className="text-xl">
+                          {item.field_value}
+                        </span>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
+          </div>
+        </Tabs>
+      </div>
+    </motion.div>
   )
 }
 
