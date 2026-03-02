@@ -1,6 +1,5 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Data } from "@/constants/data";
 import TabResumeContent from "@/components/resume/TabResumeContent";
@@ -8,14 +7,7 @@ import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/comp
 
 const Resume = () => {
   return (
-    <motion.div
-      initial={{ opacity: 0 }}
-      animate={{
-        opacity: 1,
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
-      }}
-      className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
-    >
+    <div className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
       <div className="container mx-auto">
         <Tabs
           defaultValue="experiences"
@@ -109,7 +101,7 @@ const Resume = () => {
           </div>
         </Tabs>
       </div>
-    </motion.div>
+    </div>
   )
 }
 
