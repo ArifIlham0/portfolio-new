@@ -2,6 +2,7 @@ import Link from "next/link"
 import NavBar from "./NavBar"
 import { Button } from "./ui/button"
 import MobileNavBar from "./MobileNavBar"
+import { CustomLink } from "@/constants/custom_link"
 
 const Header = () => {
   return (
@@ -15,7 +16,10 @@ const Header = () => {
             </Link>
             <div className="hidden xl:flex items-center gap-8">
                 <NavBar />
-                <Link href="/contact">
+                <Link
+                    target="_blank"
+                    href={CustomLink.fastwork}
+                >
                     <Button>Hire Me</Button>
                 </Link>
             </div>

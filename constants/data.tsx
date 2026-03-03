@@ -9,7 +9,7 @@ const Data = {
     experiences: {
         icon: "/assets/badge.svg",
         title: "Experiences",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "Over the past 2 years, I have contributed to various fast-paced environments on digital agencies, focusing on delivering scalable and user-centric mobile solutions.",
         items: [
             {
                 company: "PT Data Nusantara Adhikarya",
@@ -58,7 +58,7 @@ const Data = {
     educations: {
         icon: "/assets/cap.svg",
         title: "Educations",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "My academic journey in Informatics has provided me with a strong logical foundation, enabling me to tackle complex software engineering challenges and adapt to the evolving tech landscape.",
         items: [
             {
                 institution: "Gunadarma University",
@@ -69,7 +69,7 @@ const Data = {
     },
     skills: {
         title: "Skills",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        description: "Equipped with a diverse technical stack, I build robust mobile interfaces and efficient backend systems, ensuring seamless data flow and high application performance.",
         skillLists: [
             {
                 icon: <TbBrandReactNative />,

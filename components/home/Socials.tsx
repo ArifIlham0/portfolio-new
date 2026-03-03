@@ -1,3 +1,4 @@
+import { CustomLink } from "@/constants/custom_link"
 import Link from "next/link"
 import { FaGithub, FaLinkedin } from "react-icons/fa"
 
@@ -7,8 +8,8 @@ type Props = {
 }
 
 const socials = [
-    { icon: <FaGithub />, path: ""},
-    { icon: <FaLinkedin />, path: ""},
+    { icon: <FaGithub />, path: CustomLink.github},
+    { icon: <FaLinkedin />, path: CustomLink.linkedin},
 ]
 
 const Socials = (props: Props) => {
@@ -19,6 +20,7 @@ const Socials = (props: Props) => {
                 <Link
                     key={index}
                     href={item.path}
+                    target="_blank"
                     className={props.iconStyles}
                 >
                     {item.icon}

@@ -66,7 +66,7 @@ function TabsTrigger({
       className={cn(
         "inline-flex items-center w-full bg-[#27272C] justify-center whitespace-nowrap text-white rounded-lg p-3 text-base font-medium my-3",
         "ring-offset-white transition-all disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-accent data-[state=active]:text-primary",
-        "data-[state=active]:font-bold data-[state=active]:shadow-sm",
+        "data-[state=active]:font-bold data-[state=active]:shadow-sm cursor-pointer",
         className
       )}
       {...props}

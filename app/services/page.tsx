@@ -1,5 +1,6 @@
 "use client";
 
+import { CustomLink } from "@/constants/custom_link";
 import { Data } from "@/constants/data";
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
@@ -7,21 +8,22 @@ import { BsArrowDownRight } from "react-icons/bs";
 const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
-      <div className="container mx-auto">
+      <div className="container xl:mx-auto px-3">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
           {Data.services.map((item, index) => {
             return (
               <div
                 key={index}
-                className="flex-1 flex flex-col justify-center gap-6 group"
+                onClick={() => window.open(CustomLink.fastwork, "_blank")}
+                className="flex-1 flex flex-col justify-center gap-6 group cursor-pointer"
               >
                 <div className="w-full flex justify-between items-center">
-                  <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">
+                  <div className="text-5xl font-extrabold text-outline text-transparent transition-all duration-500 group-hover:text-accent">
                     {item.num}
                   </div>
                   <Link
                     href={item.href}
-                    className="w-17.5 h-17.5 rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45"
+                    className="w-17.5 h-17.5 rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center -rotate-90"
                   >
                     <BsArrowDownRight className="text-primary text-3xl"/>
                   </Link>

@@ -14,7 +14,7 @@ const Resume = () => {
           defaultValue="experiences"
           className="flex flex-col xl:flex-row gap-15"
         >
-          <TabsList className="flex flex-col w-full max-w-95 mx-auto xl:mx-0">
+          <TabsList className="flex flex-col w-full max-w-90 xl:max-w-95 mx-auto xl:mx-0">
             <TabsTrigger value="experiences">Experiences</TabsTrigger>
             <TabsTrigger value="educations">Educations</TabsTrigger>
             <TabsTrigger value="skills">Skills</TabsTrigger>
@@ -43,11 +43,11 @@ const Resume = () => {
                   <h3 className="text-4xl font-bold">
                     {Data.skills.title}
                   </h3>
-                  <p className="max-w-180 text-white/60 mx-auto xl:mx-0 text-justify">
+                  <p className="max-w-180 text-white/60 mx-4 xl:mx-0 text-justify">
                     {Data.skills.description}
                   </p>
                 </div>
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-7.5">
+                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-7.5 xl:mx-0 mx-4">
                   {Data.skills.skillLists.map((item, index) => {
                     return (
                       <li key={index}>
@@ -77,7 +77,7 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">
                   {Data.about.title}
                 </h3>
-                <p className="max-w-180 text-white/60 mx-auto xl:mx-0 text-justify">
+                <p className="max-w-180 text-white/60 mx-4 xl:mx-0 text-justify">
                   {Data.about.description}
                 </p>
                 <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-180 mx-auto xl:mx-0">
@@ -85,7 +85,7 @@ const Resume = () => {
                     return (
                       <li
                         key={index}
-                        className="flex items-center justify-center xl:justify-start gap-4"
+                        className="flex items-center justify-start gap-4"
                       >
                         <span className="text-white/60">
                           {item.field_name}

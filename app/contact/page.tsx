@@ -4,6 +4,7 @@ import { Select, SelectContent, SelectGroup, SelectItem, SelectLabel, SelectTrig
 import { Data } from "@/constants/data";
 import { useState } from "react";
 import Image from "next/image";
+import { CustomLink } from "@/constants/custom_link";
 
 const Contact = () => {
   type LogoKey = "fastwork" | "sribu" | "fiverr";
@@ -12,17 +13,17 @@ const Contact = () => {
     fastwork: {
       src: "/assets/fastwork.png",
       alt: "Fastwork Logo",
-      link: "https://fastwork.id/user/arifilham0/mobile-application-76024141?utm_source=app_sharing"
+      link: CustomLink.fastwork,
     },
     sribu: {
       src: "/assets/sribu.png",
       alt: "Sribu Logo",
-      link: "https://www.sribu.com/id/users/arifilham/custom-aplikasi-ios-and-android-with-ai-integration-09f9dfc0-8758-4d23-bbbe-3370daa70291"
+      link: CustomLink.sribu
     },
     fiverr: {
       src: "/assets/fiverr.jpg",
       alt: "Fiverr Logo",
-      link: "https://www.fiverr.com/s/VYEwkrB?utm_source=_Mobile"
+      link: CustomLink.fiverr
     }
   };
   return (
@@ -39,11 +40,11 @@ const Contact = () => {
               </p>
               <Select value={selected} onValueChange={v => setSelected(v as LogoKey)}>
                 <SelectTrigger className="w-full">
-                  <SelectValue placeholder="Select a Service" />
+                  <SelectValue placeholder="Select a Platform" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectGroup>
-                    <SelectLabel>Select a Service</SelectLabel>
+                    <SelectLabel>Select a Platform</SelectLabel>
                     <SelectItem value="fastwork">Fastwork</SelectItem>
                     <SelectItem value="sribu">Sribu</SelectItem>
                     <SelectItem value="fiverr">Fiverr</SelectItem>

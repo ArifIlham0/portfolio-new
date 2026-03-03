@@ -1,3 +1,5 @@
+"use client";
+
 import Photo from "@/components/home/Photo"
 import Socials from "@/components/home/Socials"
 import Stats from "@/components/home/Stats"
@@ -21,6 +23,7 @@ const Home = () => {
               <Button
                 size="lg"
                 variant="outline"
+                onClick={() => window.open("/assets/Portfolio Ilham.pdf", "_blank")}
                 className="uppercase flex items-center gap-2"
               >
                 <span>Resume</span>
