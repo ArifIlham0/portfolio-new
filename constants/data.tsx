@@ -1,5 +1,6 @@
 import { DiDjango, DiFirebase, DiMysql, DiPostgresql } from "react-icons/di";
-import { FaFlutter } from "react-icons/fa6";
+import { FaPhoneAlt } from "react-icons/fa";
+import { FaEnvelope, FaFlutter } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiExpress } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
@@ -180,7 +181,33 @@ const Data = {
                 },
             ],
         },
-    ]
+    ],
+    info: [
+        {
+            icon: <FaPhoneAlt />,
+            title: "Phone",
+            description: "(+62) 878-7568-6342",
+        },
+        {
+            icon: <FaEnvelope />,
+            title: "Email",
+            description: "marifilham999@gmail.com",
+        },
+    ],
+    services: [
+        {
+            num: "01",
+            href: "",
+            title: "Mobile App Development",
+            description: "I specialize in creating high-quality mobile applications for both iOS and Android platforms, with AI integrations if needed."
+        },
+        {
+            num: "02",
+            href: "",
+            title: "Web Development",
+            description: "I create responsive and dynamic websites using modern web technologies, with AI integrations if needed."
+        },
+    ],
 }
 
 export { Data };

@@ -9,6 +9,7 @@ const Resume = () => {
   return (
     <div className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0">
       <div className="container mx-auto">
+        <div className="xl:py-5"></div>
         <Tabs
           defaultValue="experiences"
           className="flex flex-col xl:flex-row gap-15"
@@ -42,7 +43,7 @@ const Resume = () => {
                   <h3 className="text-4xl font-bold">
                     {Data.skills.title}
                   </h3>
-                  <p className="max-w-150 text-white/60 mx-auto xl:mx-0">
+                  <p className="max-w-180 text-white/60 mx-auto xl:mx-0 text-justify">
                     {Data.skills.description}
                   </p>
                 </div>
@@ -76,10 +77,10 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">
                   {Data.about.title}
                 </h3>
-                <p className="max-w-150 text-white/60 mx-auto xl:mx-0">
+                <p className="max-w-180 text-white/60 mx-auto xl:mx-0 text-justify">
                   {Data.about.description}
                 </p>
-                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-155 mx-auto xl:mx-0">
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-180 mx-auto xl:mx-0">
                   {Data.about.info.map((item, index) => {
                     return (
                       <li
@@ -100,6 +101,7 @@ const Resume = () => {
             </TabsContent>
           </div>
         </Tabs>
+        <div className="xl:py-5"></div>
       </div>
     </div>
   )

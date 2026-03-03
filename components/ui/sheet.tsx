@@ -74,6 +74,7 @@ function SheetContent({
         )}
         {...props}
       >
+        <SheetTitle className="sr-only">Navigation Menu</SheetTitle>
         {children}
         {showCloseButton && (
           <SheetPrimitive.Close className="absolute right-8 top-8 transition-opacity outline-none">

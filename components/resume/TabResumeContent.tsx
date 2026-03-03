@@ -18,7 +18,8 @@ const TabResumeContent = (props: Props) => {
     <>
         <div className="flex flex-col gap-7.5 text-center xl:text-left">
             <h3 className="text-4xl font-bold">{props.title}</h3>
-            <p className="max-w-150 text-white/60 mx-auto xl:mx-0">{props.description}</p>
+            <p className="max-w-180 text-white/60 mx-auto xl:mx-0 text-justify">{props.description}</p>
+            <div className="py-1"></div>
         </div>
         <ScrollArea className="h-100">
             <ul className="grid grid-cols-1 lg:grid-cols-2 gap-7.5">

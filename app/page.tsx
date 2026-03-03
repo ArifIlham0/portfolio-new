@@ -10,11 +10,11 @@ const Home = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           <div className="text-center xl:text-left order-2 xl:order-0">
-            <span>Mobile Developer (AI-Forward)</span>
+            <span className="xl:text-2xl">Mobile Developer (AI-Forward)</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br /> <span className="text-accent">Arif Ilham</span>
             </h1>
-            <p className="max-w-125 mb-9 text-white/80">
+            <p className="max-w-90 mb-9 text-white/80">
               I&apos;m very passionate about leveraging the latest AI frameworks to create smarter, more engaging applications.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">

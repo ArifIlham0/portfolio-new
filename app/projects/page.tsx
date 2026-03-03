@@ -20,6 +20,7 @@ const Projects = () => {
   
   return (
     <div className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
+      <div className="py-3"></div>
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:gap-7.5">
           <div className="w-full xl:w-[50%] xl:h-115 flex flex-col xl:justify-between order-2 xl:order-0">
@@ -27,7 +28,7 @@ const Projects = () => {
               <div className="text-8xl leading-none font-extrabold text-transparent text-outline">
                 {project.num}
               </div>
-              <h2 className="text-[42px] font-bold leading-0 text-white group-hover:text-accent transition-all duration-500 capitalize">
+              <h2 className="text-[42px] font-bold leading-tight text-white group-hover:text-accent transition-all duration-500 capitalize">
                 {project.category} project
               </h2>
               <p className="text-white/60">

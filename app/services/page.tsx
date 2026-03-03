@@ -1,29 +1,15 @@
 "use client";
 
+import { Data } from "@/constants/data";
 import Link from "next/link";
 import { BsArrowDownRight } from "react-icons/bs";
-
-const services = [
-  {
-    num: "01",
-    href: "",
-    title: "Mobile App Development",
-    description: "I specialize in creating high-quality mobile applications for both iOS and Android platforms, with AI integrations if needed."
-  },
-  {
-    num: "02",
-    href: "",
-    title: "Web Development",
-    description: "I create responsive and dynamic websites using modern web technologies, with AI integrations if needed."
-  },
-]
 
 const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-15">
-          {services.map((item, index) => {
+          {Data.services.map((item, index) => {
             return (
               <div
                 key={index}
