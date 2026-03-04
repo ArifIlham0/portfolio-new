@@ -27,7 +27,7 @@ const Contact = () => {
     }
   };
   return (
-    <section className="py-15">
+    <section className="py-15 px-4 xl:px-0">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row xl:grow gap-7.5">
           <div className="xl:w-[54%] order-2 xl:order-0">
@@ -56,7 +56,8 @@ const Contact = () => {
                   href={logoMap[selected].link}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-block"
+                  className="group flex flex-col items-center"
+                  title={`Visit my profile at ${selected.charAt(0).toUpperCase() + selected.slice(1)}`}
                 >
                   <Image
                     src={logoMap[selected].src}
@@ -65,6 +66,12 @@ const Contact = () => {
                     height={96}
                     className="w-24 h-24 object-contain rounded-lg border border-gray-700 transition-transform duration-200 hover:scale-110 hover:shadow-lg cursor-pointer"
                   />
+                  <span className="block mt-2 text-center text-white text-base font-semibold">
+                    {"Open"} {selected.charAt(0).toUpperCase() + selected.slice(1)}
+                  </span>
+                  <span className="block text-center text-accent text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+                    Click to open profile
+                  </span>
                 </a>
               </div>
             </form>
