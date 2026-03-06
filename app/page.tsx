@@ -4,30 +4,9 @@ import Photo from "@/components/home/Photo"
 import Socials from "@/components/home/Socials"
 import Stats from "@/components/home/Stats"
 import { Button } from "@/components/ui/button"
-import { useEffect, useState } from "react";
 import { FiExternalLink } from "react-icons/fi"
 
 const Home = () => {
-  const [locationAllowed, setLocationAllowed] = useState(false);
-
-  useEffect(() => {
-    if (navigator.geolocation) {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-          console.log("Latitude:", position.coords.latitude)
-          console.log("Longitude:", position.coords.longitude)
-          setLocationAllowed(true);
-        },
-        (error) => {
-          console.error("Error getting location:", error)
-          setLocationAllowed(false);
-        }
-      )
-    } else {
-      console.error("Geolocation is not supported by this browser.")
-    }
-  }, [])
-
   return (
     <section className="h-full">
       <div className="container mx-auto h-full">
@@ -41,7 +20,7 @@ const Home = () => {
               I&apos;m very passionate about leveraging the latest AI frameworks to create smarter, more engaging applications.
             </p>
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              {/* <Button
+              <Button
                 size="lg"
                 variant="outline"
                 onClick={() => window.open("/assets/Portfolio Ilham.pdf", "_blank")}
@@ -49,18 +28,7 @@ const Home = () => {
               >
                 <span>Resume</span>
                 <FiExternalLink className="text-xl"/>
-              </Button> */}
-              {!locationAllowed && (
-                <Button
-                  size="lg"
-                  variant="outline"
-                  onClick={() => window.open("/assets/Portfolio Ilham.pdf", "_blank")}
-                  className="uppercase flex items-center gap-2"
-                >
-                  <span>Resume</span>
-                  <FiExternalLink className="text-xl"/>
-                </Button>
-              )}
+              </Button>
               <div className="mb-8 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
