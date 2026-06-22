@@ -1,10 +1,19 @@
-import Link from "next/link"
-import NavBar from "./NavBar"
-import { Button } from "./ui/button"
-import MobileNavBar from "./MobileNavBar"
-import { CustomLink } from "@/constants/custom_link"
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import NavBar from "./NavBar";
+import { Button } from "./ui/button";
+import MobileNavBar from "./MobileNavBar";
+import { CustomLink } from "@/constants/custom_link";
 
 const Header = () => {
+  const pathname = usePathname();
+
+  if (pathname === "/privacy-policy/gurubot") {
+    return null;
+  }
+
   return (
     <header>
         <div className="py-5"></div>
@@ -29,7 +38,7 @@ const Header = () => {
             </div>
         </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
