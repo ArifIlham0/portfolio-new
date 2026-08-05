@@ -11,7 +11,7 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Arif Ilham",
-  description: "Mobile Developer (AI-Forward)",
+  description: "AI Mobile Developer",
 };
 
 export default function RootLayout({

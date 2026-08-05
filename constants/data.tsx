@@ -30,7 +30,7 @@ const Data = {
     },
     about: {
         title: "About Me",
-        description: "I am a Mobile Developer (AI-Forward) with 2 years of experience specializing in building high-performance iOS and Android applications using React Native and Flutter. Now focusing on enhancing user experiences by integrating AI-driven features into mobile developments. With a solid backend foundation in Django and PostgreSQL, I bridge the gap between complex AI models, user-friendly mobile interfaces. Very passionate about leveraging the latest AI frameworks to create smarter, more engaging applications.",
+        description: "I am an AI Mobile Developer with 2 years of experience specializing in building high-performance iOS and Android applications using React Native and Flutter. Now focusing on enhancing user experiences by integrating AI-driven features into mobile developments. With a solid backend foundation in Django and PostgreSQL, I bridge the gap between complex AI models, user-friendly mobile interfaces. Very passionate about leveraging the latest AI frameworks to create smarter, more engaging applications.",
         info: [
             {
                 field_name: "Name",
