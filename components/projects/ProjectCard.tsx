@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { BiLogoPlayStore } from "react-icons/bi";
 import { FaAppStore } from "react-icons/fa6";
 
@@ -65,55 +65,41 @@ export default function ProjectCard({ project }: ProjectCardProps) {
         </div>
       </div>
       <div className="p-5 pt-0 mt-2">
-        <div className="border-t border-zinc-800/80 pt-4 flex items-center justify-between gap-2 flex-wrap">
-          <div className="flex items-center gap-2 flex-wrap">
-            {project.app_store && (
-              <Link
-                href={project.app_store}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View ${project.title} on App Store`}
-                className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-zinc-800/90 text-zinc-200 hover:bg-zinc-700 hover:text-white transition-colors border border-zinc-700/60"
-              >
-                <FaAppStore className="text-sm text-sky-400" />
-                <span>App Store</span>
-              </Link>
-            )}
-            {project.play_store && (
-              <Link
-                href={project.play_store}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`View ${project.title} on Google Play`}
-                className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-zinc-800/90 text-zinc-200 hover:bg-zinc-700 hover:text-white transition-colors border border-zinc-700/60"
-              >
-                <BiLogoPlayStore className="text-sm text-emerald-400" />
-                <span>Play Store</span>
-              </Link>
-            )}
-            {project.website && (
-              <Link
-                href={project.website}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={`Visit ${project.title} Live Website`}
-                className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-zinc-800/90 text-zinc-200 hover:bg-zinc-700 hover:text-white transition-colors border border-zinc-700/60"
-              >
-                <BsArrowUpRight className="text-sm text-amber-400" />
-                <span>Live Site</span>
-              </Link>
-            )}
-          </div>
-          {project.github && (
+        <div className="border-t border-zinc-800/80 pt-4 flex items-center gap-2 flex-wrap">
+          {project.app_store && (
             <Link
-              href={project.github}
+              href={project.app_store}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label={`View ${project.title} source code on GitHub`}
-              className="p-2 rounded-lg bg-zinc-800/90 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-colors border border-zinc-700/60"
-              title="GitHub Repository"
+              aria-label={`View ${project.title} on App Store`}
+              className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-zinc-800/90 text-zinc-200 hover:bg-zinc-700 hover:text-white transition-colors border border-zinc-700/60"
             >
-              <BsGithub className="text-base" />
+              <FaAppStore className="text-sm text-sky-400" />
+              <span>App Store</span>
+            </Link>
+          )}
+          {project.play_store && (
+            <Link
+              href={project.play_store}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.title} on Google Play`}
+              className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-zinc-800/90 text-zinc-200 hover:bg-zinc-700 hover:text-white transition-colors border border-zinc-700/60"
+            >
+              <BiLogoPlayStore className="text-sm text-emerald-400" />
+              <span>Play Store</span>
+            </Link>
+          )}
+          {project.website && (
+            <Link
+              href={project.website}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`Visit ${project.title} Live Website`}
+              className="inline-flex items-center gap-1.5 text-xs font-medium px-2.5 py-1.5 rounded-lg bg-zinc-800/90 text-zinc-200 hover:bg-zinc-700 hover:text-white transition-colors border border-zinc-700/60"
+            >
+              <BsArrowUpRight className="text-sm text-amber-400" />
+              <span>Live Site</span>
             </Link>
           )}
         </div>

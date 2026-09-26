@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { BsArrowUpRight, BsGithub } from "react-icons/bs";
+import { BsArrowUpRight } from "react-icons/bs";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperClass } from "swiper";
 import Image from "next/image";
@@ -97,13 +97,6 @@ const Projects = () => {
                     href={project.app_store}
                     icon={<FaAppStore className="text-white text-3xl group-hover:text-accent" />}
                     tooltip="App Store"
-                  />
-                )}
-                {project.github && (
-                  <ProjectLink
-                    href={project.github}
-                    icon={<BsGithub className="text-white text-3xl group-hover:text-accent" />}
-                    tooltip="GitHub Repository"
                   />
                 )}
               </div>
