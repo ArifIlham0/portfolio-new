@@ -49,6 +49,30 @@ const ProjectLists = {
         },
         {
             num: "03",
+            category: "Mobile App",
+            title: "Caliana ClockWise",
+            description: "A modern, mobile-based digital solution for attendance and HR management that facilitates accurate employee attendance tracking, instant leave requests, and integration with door access security systems.",
+            image: "/assets/caliana_clockwise.jpeg",
+            website: null,
+            app_store: "https://apps.apple.com/id/app/caliana-clockwise/id6446073722",
+            play_store: "https://play.google.com/store/apps/details?id=id.caliana.clockwise",
+            stack: [
+                {
+                    name: "Flutter",
+                },
+                {
+                    name: "Firebase",
+                },
+                {
+                    name: "Fastify",
+                },
+                {
+                    name: "MySQL",
+                },
+            ],
+        },
+        {
+            num: "04",
             category: "Mobile App & Web",
             title: "Spirit - Layanan Rumah Tangga",
             description: "Spirit is your one-stop solution for a wide range of home services. From rejuvenating massages to thorough home cleaning, we connect you with experienced and vetted partner.",
@@ -70,7 +94,7 @@ const ProjectLists = {
             ],
         },
         {
-            num: "04",
+            num: "05",
             category: "Mobile App & Web",
             title: "Maritim Muda Connect",
             description: "An application that aims to connect young people in Indonesia's maritime sector, facilitate collaboration, share information, and support economic growth.",
@@ -91,7 +115,7 @@ const ProjectLists = {
             ],
         },
         {
-            num: "05",
+            num: "06",
             category: "Mobile App & Web",
             title: "Vocasia",
             description: "An online educational marketplace & learning management system platform for sharing structured skills and knowledge. Vocasia can be widely used for both individuals and communities with affordable training prices.",
