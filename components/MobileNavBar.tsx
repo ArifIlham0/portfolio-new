@@ -1,7 +1,7 @@
 "use client";
 
 import { Sheet, SheetContent, SheetTrigger, SheetHeader, SheetTitle } from "./ui/sheet";
-import { Menu, FileText, Mail } from "lucide-react";
+import { Menu, Mail } from "lucide-react";
 import { useState } from "react";
 import { Route } from "@/constants/route";
 import Socials from "./home/Socials";
@@ -44,17 +44,6 @@ const MobileNavBar = () => {
         </div>
 
         <div className="flex flex-col gap-4 pt-6 border-t border-zinc-800/80">
-          <a
-            href="/assets/Portfolio Ilham.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => setIsOpen(false)}
-            className="w-full flex items-center justify-center gap-2 py-2.5 rounded-xl bg-zinc-900 text-zinc-200 border border-zinc-700/80 text-sm font-semibold hover:bg-zinc-800 transition-colors"
-          >
-            <FileText className="w-4 h-4 text-sky-400" />
-            <span>Download Resume (PDF)</span>
-          </a>
-
           <a
             href="#contact"
             onClick={() => setIsOpen(false)}

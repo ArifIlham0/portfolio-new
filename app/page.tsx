@@ -10,7 +10,7 @@ import ProjectFilter from "@/components/projects/ProjectFilter";
 import ExperienceTimeline from "@/components/resume/ExperienceTimeline";
 import SkillsGrid from "@/components/resume/SkillsGrid";
 import ContactSection from "@/components/contact/ContactSection";
-import { ArrowDown, FileText, FolderGit2, Briefcase, Wrench } from "lucide-react";
+import { ArrowDown, Mail, FolderGit2, Briefcase, Wrench } from "lucide-react";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -42,7 +42,7 @@ export default function Home() {
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
                 </span>
-                <span>Available for Full-time &amp; Contract Roles</span>
+                <span>Open to Work</span>
               </div>
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5 leading-[1.1]">
                 Hi, I&apos;m <span className="bg-linear-to-r from-sky-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">Arif Ilham</span>
@@ -51,24 +51,22 @@ export default function Home() {
                 Mobile AI Engineer
               </p>
               <p className="text-sm sm:text-base text-zinc-400 max-w-xl mb-8 leading-relaxed">
-                With 2+ years of production experience, I build high-performance iOS and Android applications using <span className="text-zinc-200 font-semibold">Flutter</span> and <span className="text-zinc-200 font-semibold">React Native</span>, supported by robust backend architectures with <span className="text-zinc-200 font-semibold">Fastify</span>, <span className="text-zinc-200 font-semibold">Django</span>, and modern AI integrations. Multiple applications successfully shipped to App Store and Google Play.
+                With 2+ years of production experience, I build high-performance iOS and Android applications using <span className="text-zinc-200 font-semibold">Flutter</span> and <span className="text-zinc-200 font-semibold">React Native</span>, supported by robust backend architectures with <span className="text-zinc-200 font-semibold">Django</span>, <span className="text-zinc-200 font-semibold">PostgreSQL</span>, and modern AI integrations. Multiple applications successfully shipped to App Store and Google Play.
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-8 w-full sm:w-auto">
                 <a
-                  href="/assets/Portfolio Ilham.pdf"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  href="#projects"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-white text-zinc-950 font-bold text-sm hover:bg-zinc-200 transition-all shadow-md shadow-white/5 cursor-pointer"
                 >
-                  <FileText className="w-4 h-4 text-sky-600" />
-                  <span>Download Resume (PDF)</span>
+                  <span>View Projects</span>
+                  <ArrowDown className="w-4 h-4" />
                 </a>
                 <a
-                  href="#projects"
+                  href="#contact"
                   className="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-zinc-900 text-zinc-200 font-semibold text-sm hover:bg-zinc-800 hover:text-white border border-zinc-700/80 transition-all cursor-pointer"
                 >
-                  <span>View Projects</span>
-                  <ArrowDown className="w-4 h-4 text-zinc-400" />
+                  <Mail className="w-4 h-4 text-zinc-400" />
+                  <span>Get in Touch</span>
                 </a>
               </div>
               <div className="flex items-center gap-3">

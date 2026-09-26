@@ -1,9 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { FaFlutter } from "react-icons/fa6";
-import { TbBrandReactNative } from "react-icons/tb";
-import { Sparkles } from "lucide-react";
+import { Smartphone, Layers, Sparkles } from "lucide-react";
 
 const Photo = () => {
   return (
@@ -15,21 +13,21 @@ const Photo = () => {
             fill
             priority
             quality={95}
-            alt="Arif Ilham - Mobile AI Engineer"
+            alt="Arif Ilham - Mobile & Full-Stack AI Engineer"
             className="object-cover object-center transition-transform duration-700 hover:scale-105"
             src="/assets/profile_photo.jpeg"
           />
         </div>
         <div className="absolute -bottom-3 -left-3 px-3 py-1.5 rounded-xl bg-zinc-900/90 backdrop-blur-md border border-zinc-700/80 shadow-lg flex items-center gap-2">
-          <FaFlutter className="text-sky-400 text-base" />
-          <span className="text-xs font-semibold text-white">Flutter Dev</span>
+          <Smartphone className="w-4 h-4 text-sky-400" />
+          <span className="text-xs font-semibold text-white">Mobile Engineer</span>
         </div>
         <div className="absolute -top-3 -right-3 px-3 py-1.5 rounded-xl bg-zinc-900/90 backdrop-blur-md border border-zinc-700/80 shadow-lg flex items-center gap-2">
-          <TbBrandReactNative className="text-cyan-400 text-base" />
-          <span className="text-xs font-semibold text-white">React Native</span>
+          <Layers className="w-4 h-4 text-indigo-400" />
+          <span className="text-xs font-semibold text-white">Full-Stack Engineer</span>
         </div>
         <div className="hidden sm:flex absolute -right-4 bottom-12 px-2.5 py-1 rounded-lg bg-zinc-900/90 backdrop-blur-md border border-zinc-700/80 shadow-lg items-center gap-1.5">
-          <Sparkles className="text-purple-400 text-xs" />
+          <Sparkles className="w-3.5 h-3.5 text-purple-400" />
           <span className="text-[10px] font-mono text-zinc-300">AI Integrated</span>
         </div>
       </div>
