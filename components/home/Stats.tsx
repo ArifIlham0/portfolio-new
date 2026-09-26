@@ -29,7 +29,7 @@ const stats = [
     num: 12,
     suffix: "+",
     label: "Tech Ecosystem",
-    subtext: "Flutter, React Native, Fastify, AI",
+    subtext: "Flutter, React Native, Django, AI",
     icon: <Cpu className="w-5 h-5 text-purple-400" />,
   },
 ];

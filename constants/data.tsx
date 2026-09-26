@@ -2,7 +2,7 @@ import { DiDjango, DiFirebase, DiMysql, DiPostgresql } from "react-icons/di";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaEnvelope, FaFlutter } from "react-icons/fa6";
 import { RiNextjsFill } from "react-icons/ri";
-import { SiExpress, SiFastify, SiLaravel, SiTypescript, SiDart, SiDocker } from "react-icons/si";
+import { SiExpress, SiLaravel, SiTypescript, SiDart, SiDocker } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 
 const Data = {
@@ -12,16 +12,16 @@ const Data = {
         description: "Over the past 2+ years, I have engineered scalable mobile applications and backend services, successfully shipping multiple apps to the App Store and Google Play Store.",
         items: [
             {
-                company: "PT Data Nusantara Adhikarya",
+                company: "Caliana Indonesia",
                 position: "Mobile Apps Developer",
                 duration: "May 2025 - Sep 2026",
-                description: "Lead mobile development for public sector and ISP monitoring platforms, ensuring high availability, offline resilience, and smooth native device performance.",
+                description: "Develop mobile app for public sector and ISP monitoring platforms, ensuring high availability, offline resilience, and smooth native device performance.",
                 highlights: [
                     "Engineered Banggai Digital Service, a citizen services super-app published on App Store & Google Play with multi-service integration.",
                     "Built MyZetta internet service monitoring mobile app with live analytics, bill payment, and network status tracking.",
                     "Integrated real-time RESTful APIs with Fastify and optimized state management using Flutter BLoC/Provider."
                 ],
-                technologies: ["Flutter", "Fastify", "MySQL", "Firebase", "REST APIs", "BLoC"]
+                technologies: ["Flutter", "Firebase", "REST APIs", "Riverpod"]
             },
             {
                 company: "Maritim Muda Nusantara",
@@ -112,7 +112,6 @@ const Data = {
             {
                 name: "Backend & APIs",
                 skills: [
-                    { name: "Fastify", icon: <SiFastify /> },
                     { name: "Django", icon: <DiDjango /> },
                     { name: "Laravel", icon: <SiLaravel /> },
                     { name: "Express.js", icon: <SiExpress /> },
@@ -152,10 +151,6 @@ const Data = {
             {
                 icon: <SiTypescript />,
                 name: "TypeScript",
-            },
-            {
-                icon: <SiFastify />,
-                name: "Fastify",
             },
             {
                 icon: <DiDjango />,

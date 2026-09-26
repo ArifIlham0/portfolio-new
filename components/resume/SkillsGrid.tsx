@@ -2,7 +2,7 @@
 
 import { FaFlutter } from "react-icons/fa6";
 import { TbBrandReactNative } from "react-icons/tb";
-import { SiDart, SiTypescript, SiFastify, SiLaravel, SiExpress, SiDocker, SiTailwindcss } from "react-icons/si";
+import { SiDart, SiTypescript, SiLaravel, SiExpress, SiDocker, SiTailwindcss } from "react-icons/si";
 import { DiDjango, DiFirebase, DiMysql, DiPostgresql } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";
 import { Sparkles, Smartphone, Server, Database } from "lucide-react";
@@ -23,7 +23,6 @@ export default function SkillsGrid() {
       category: "Backend & APIs",
       icon: <Server className="w-5 h-5 text-emerald-400" />,
       skills: [
-        { name: "Fastify", icon: <SiFastify className="text-2xl text-white" />, desc: "High-throughput, low-overhead Node.js REST API framework" },
         { name: "Django", icon: <DiDjango className="text-2xl text-emerald-500" />, desc: "Robust Python framework for secure web backends & AI services" },
         { name: "Laravel", icon: <SiLaravel className="text-2xl text-red-500" />, desc: "PHP framework with expressive syntax and elegant ORM" },
         { name: "Express.js", icon: <SiExpress className="text-2xl text-zinc-300" />, desc: "Minimalist Node.js framework for fast microservices" },

@@ -3,14 +3,67 @@ import "./globals.css";
 import Header from "@/components/Header";
 
 export const metadata: Metadata = {
-  title: "Arif Ilham | Mobile AI Engineer",
-  description: "Mobile AI Engineer specializing in React Native, Flutter, Django and AI Integrations with 2+ years of production experience.",
-  keywords: ["Arif Ilham", "Mobile Developer", "Flutter", "React Native", "Fullstack Developer", "AI Developer", "Portfolio", "AI Engineer", "Mobile Engineer"],
-  authors: [{ name: "Arif Ilham" }],
+  metadataBase: new URL("https://arifilham.my.id"),
+  title: {
+    default: "Arif Ilham | Mobile AI Engineer",
+    template: "%s | Arif Ilham",
+  },
+  description:
+    "Portfolio of Arif Ilham, a Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, Fastify, Django, and modern AI integrations.",
+  keywords: [
+    "Arif Ilham",
+    "Muhammad Arif Ilham",
+    "Mobile AI Engineer",
+    "Mobile Developer",
+    "Flutter Developer",
+    "React Native Developer",
+    "Full-Stack Engineer",
+    "AI Engineer",
+    "Portfolio Arif Ilham",
+    "Fastify",
+    "Django",
+    "Software Engineer Indonesia",
+  ],
+  authors: [{ name: "Arif Ilham", url: "https://arifilham.my.id" }],
+  creator: "Arif Ilham",
+  publisher: "Arif Ilham",
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
     title: "Arif Ilham | Mobile AI Engineer",
-    description: "Mobile AI Engineer specializing in React Native,  Flutter, Django, and AI Integrations.",
+    description:
+      "Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, and AI integrations with 2+ years of production experience.",
+    url: "https://arifilham.my.id",
+    siteName: "Arif Ilham Portfolio",
+    locale: "en_US",
     type: "website",
+    images: [
+      {
+        url: "/assets/profile_photo.jpeg",
+        width: 800,
+        height: 800,
+        alt: "Arif Ilham - Mobile AI Engineer",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Arif Ilham | Mobile AI Engineer",
+    description:
+      "Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, and AI integrations.",
+    images: ["/assets/profile_photo.jpeg"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
