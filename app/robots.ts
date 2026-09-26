@@ -1,13 +1,15 @@
-import type { MetadataRoute } from "next";
+import { MetadataRoute } from 'next';
 
-export default function robots(): MetadataRoute.Robots {
-  const baseUrl = "https://arifilham.my.id";
+const Robots = (): MetadataRoute.Robots => {
+    const baseUrl = "https://arifilham.my.id";
 
-  return {
-    rules: {
-      userAgent: "*",
-      allow: "/",
-    },
-    sitemap: `${baseUrl}/sitemap.xml`,
-  };
+    return {
+        rules: {
+            userAgent: "*",
+            allow: "/",
+        },
+        sitemap: `${baseUrl}/sitemap.xml`,
+    }
 }
+
+export default Robots;

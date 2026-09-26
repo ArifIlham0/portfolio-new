@@ -8,8 +8,7 @@ export const metadata: Metadata = {
     default: "Arif Ilham | Mobile AI Engineer",
     template: "%s | Arif Ilham",
   },
-  description:
-    "Portfolio of Arif Ilham, a Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, Fastify, Django, and modern AI integrations.",
+  description: "Portfolio of Arif Ilham, a Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, Fastify, Django, and modern AI integrations.",
   keywords: [
     "Arif Ilham",
     "Muhammad Arif Ilham",
@@ -32,8 +31,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Arif Ilham | Mobile AI Engineer",
-    description:
-      "Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, and AI integrations with 2+ years of production experience.",
+    description: "Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, and AI integrations with 2+ years of production experience.",
     url: "https://arifilham.my.id",
     siteName: "Arif Ilham Portfolio",
     locale: "en_US",
@@ -50,8 +48,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arif Ilham | Mobile AI Engineer",
-    description:
-      "Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, and AI integrations.",
+    description: "Mobile AI Engineer & Full-Stack Developer specializing in Flutter, React Native, and AI integrations.",
     images: ["/assets/profile_photo.jpeg"],
   },
   robots: {
