@@ -49,6 +49,25 @@ const ProjectLists = {
         },
         {
             num: "03",
+            category: "Mobile App & Web",
+            title: "GURUBOT",
+            description: "An innovative AI app that helps young children learn the basics of writing, reading, and counting through fun games and activities.",
+            image: "/assets/gurubot.png",
+            website: "https://gurubot.io/welcome",
+            stack: [
+                {
+                    name: "React Native",
+                },
+                {
+                    name: "Django",
+                },
+                {
+                    name: "PostgreSQL",
+                },
+            ],
+        },
+        {
+            num: "04",
             category: "Mobile App",
             title: "Caliana ClockWise",
             description: "A modern, mobile-based digital solution for attendance and HR management that facilitates accurate employee attendance tracking, instant leave requests, and integration with door access security systems.",
@@ -72,7 +91,7 @@ const ProjectLists = {
             ],
         },
         {
-            num: "04",
+            num: "05",
             category: "Mobile App & Web",
             title: "Spirit - Layanan Rumah Tangga",
             description: "Spirit is your one-stop solution for a wide range of home services. From rejuvenating massages to thorough home cleaning, we connect you with experienced and vetted partner.",
@@ -94,7 +113,7 @@ const ProjectLists = {
             ],
         },
         {
-            num: "05",
+            num: "06",
             category: "Mobile App & Web",
             title: "Maritim Muda Connect",
             description: "An application that aims to connect young people in Indonesia's maritime sector, facilitate collaboration, share information, and support economic growth.",
@@ -115,7 +134,7 @@ const ProjectLists = {
             ],
         },
         {
-            num: "06",
+            num: "07",
             category: "Mobile App & Web",
             title: "Vocasia",
             description: "An online educational marketplace & learning management system platform for sharing structured skills and knowledge. Vocasia can be widely used for both individuals and communities with affordable training prices.",
