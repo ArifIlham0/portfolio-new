@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { BookOpen, Camera, CheckCircle2, ChevronRight, ExternalLink, Mail, Phone, ShieldCheck, Smartphone } from "lucide-react";
+import { BookOpen, Camera, ChevronRight, ExternalLink, Mail, Phone, ShieldCheck, Smartphone } from "lucide-react";
 
 export const metadata: Metadata = {
     title: "Kebijakan Privasi GURUBOT",

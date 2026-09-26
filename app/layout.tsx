@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header";
 
-const jetBrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrainsMono",
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800"],
-});
-
 export const metadata: Metadata = {
-  title: "Arif Ilham",
-  description: "AI Mobile Developer",
+  title: "Arif Ilham | Mobile AI Engineer",
+  description: "Mobile AI Engineer specializing in React Native, Flutter, Django and AI Integrations with 2+ years of production experience.",
+  keywords: ["Arif Ilham", "Mobile Developer", "Flutter", "React Native", "Fullstack Developer", "AI Developer", "Portfolio", "AI Engineer", "Mobile Engineer"],
+  authors: [{ name: "Arif Ilham" }],
+  openGraph: {
+    title: "Arif Ilham | Mobile AI Engineer",
+    description: "Mobile AI Engineer specializing in React Native,  Flutter, Django, and AI Integrations.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -20,12 +20,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={jetBrainsMono.variable}
-      >
+    <html lang="en" className="scroll-smooth">
+      <body className="min-h-screen bg-[#09090b] text-zinc-100 antialiased selection:bg-sky-500/20 selection:text-sky-300 font-sans">
         <Header />
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );

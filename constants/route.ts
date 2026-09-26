@@ -1,24 +1,24 @@
 const Route = {
     links: [
         {
-            name: "home",
-            path: "/",
+            name: "About",
+            path: "#about",
         },
         {
-            name: "services",
-            path: "/services",
+            name: "Projects",
+            path: "#projects",
         },
         {
-            name: "resume",
-            path: "/resume",
+            name: "Experience",
+            path: "#experience",
         },
         {
-            name: "projects",
-            path: "/projects",
+            name: "Skills",
+            path: "#skills",
         },
         {
-            name: "contact",
-            path: "/contact",
+            name: "Contact",
+            path: "#contact",
         },
     ],
 }
