@@ -91,7 +91,7 @@ const ProjectLists = {
             ],
         },
         {
-            num: "06",
+            num: "05",
             category: "Mobile App & Web",
             title: "Vocasia",
             description: "An online educational marketplace & learning management system platform for sharing structured skills and knowledge. Vocasia can be widely used for both individuals and communities with affordable training prices.",

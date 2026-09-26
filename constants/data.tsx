@@ -14,7 +14,7 @@ const Data = {
             {
                 company: "PT Data Nusantara Adhikarya",
                 position: "Mobile Apps Developer",
-                duration: "May 2024 - Present",
+                duration: "May 2025 - Sep 2026",
                 description: "Lead mobile development for public sector and ISP monitoring platforms, ensuring high availability, offline resilience, and smooth native device performance.",
                 highlights: [
                     "Engineered Banggai Digital Service, a citizen services super-app published on App Store & Google Play with multi-service integration.",
