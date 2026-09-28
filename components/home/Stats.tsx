@@ -15,7 +15,7 @@ const stats = [
     num: 7,
     suffix: "+",
     label: "Shipped Projects",
-    subtext: "Live citizen & commercial apps",
+    subtext: "Mobile & web apps",
     icon: <Smartphone className="w-5 h-5 text-emerald-400" />,
   },
   {
