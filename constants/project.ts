@@ -159,6 +159,28 @@ const ProjectLists = {
                 },
             ],
         },
+        {
+            num: "08",
+            category: "Mobile App & Web",
+            title: "Nusa Property",
+            description: "A comprehensive digital ecosystem for modern property ownership in Indonesia.",
+            image: "/assets/nusa_property.jpeg",
+            website: "https://nusaproperty.syndual.cloud",
+            stack: [
+                {
+                    name: "Kotlin",
+                },
+                {
+                    name: "Next.js",
+                },
+                {
+                    name: "FastAPI",
+                },
+                {
+                    name: "PostgreSQL",
+                },
+            ],
+        },
     ],
 }
 

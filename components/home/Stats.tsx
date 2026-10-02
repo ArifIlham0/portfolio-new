@@ -5,14 +5,14 @@ import { Award, Smartphone, CheckCircle, Cpu } from "lucide-react";
 
 const stats = [
   {
-    num: 2,
-    suffix: "+",
+    num: 3,
+    suffix: "+-",
     label: "Years Experience",
     subtext: "Production mobile & ai",
     icon: <Award className="w-5 h-5 text-sky-400" />,
   },
   {
-    num: 7,
+    num: 8,
     suffix: "+",
     label: "Shipped Projects",
     subtext: "Mobile & web apps",

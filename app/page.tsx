@@ -10,10 +10,24 @@ import ProjectFilter from "@/components/projects/ProjectFilter";
 import ExperienceTimeline from "@/components/resume/ExperienceTimeline";
 import SkillsGrid from "@/components/resume/SkillsGrid";
 import ContactSection from "@/components/contact/ContactSection";
-import { ArrowDown, Mail, FolderGit2, Briefcase, Wrench } from "lucide-react";
+import { ArrowDown, Mail, FolderGit2, Briefcase, Wrench, ChevronDown, ChevronUp } from "lucide-react";
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("All");
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const handleSelectCategory = (category: string) => {
+    setSelectedCategory(category);
+    setIsExpanded(false);
+  };
+
+  const handleCollapse = () => {
+    setIsExpanded(false);
+    const element = document.getElementById("projects");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   const allProjects = ProjectLists.data;
   const categories = ["All", "Mobile App", "Mobile App & Web"];
@@ -51,7 +65,7 @@ export default function Home() {
                 Mobile AI Engineer
               </p>
               <p className="text-sm sm:text-base text-zinc-400 max-w-xl mb-8 leading-relaxed">
-                With 2+ years of production experience, I build high-performance iOS and Android applications using <span className="text-zinc-200 font-semibold">Flutter</span> and <span className="text-zinc-200 font-semibold">React Native</span>, supported by robust backend architectures with <span className="text-zinc-200 font-semibold">Django</span>, <span className="text-zinc-200 font-semibold">PostgreSQL</span>, and modern AI integrations. Multiple applications successfully shipped to App Store and Google Play.
+                With 3 years of production experience, I build high-performance iOS and Android applications using <span className="text-zinc-200 font-semibold">Flutter</span> and <span className="text-zinc-200 font-semibold">React Native</span>, supported by robust backend architectures with <span className="text-zinc-200 font-semibold">Django</span>, <span className="text-zinc-200 font-semibold">PostgreSQL</span>, and modern AI integrations. Multiple applications successfully shipped to App Store and Google Play.
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-8 w-full sm:w-auto">
                 <a
@@ -103,15 +117,79 @@ export default function Home() {
             <ProjectFilter
               categories={categories}
               activeCategory={selectedCategory}
-              onSelectCategory={setSelectedCategory}
+              onSelectCategory={handleSelectCategory}
               counts={counts}
             />
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {filteredProjects.map((project) => (
-              <ProjectCard key={project.num} project={project} />
-            ))}
+            {filteredProjects.map((project, index) => {
+              const isFifthCard = index === 4;
+              const isAfterFifth = index > 4;
+
+              if (isFifthCard) {
+                return (
+                  <div
+                    key={project.num}
+                    className={
+                      !isExpanded
+                        ? "relative max-h-35 md:max-h-none overflow-hidden md:overflow-visible rounded-2xl"
+                        : "relative"
+                    }
+                  >
+                    <ProjectCard project={project} />
+                    {!isExpanded && (
+                      <div
+                        onClick={() => setIsExpanded(true)}
+                        className="absolute inset-0 bg-linear-to-t from-zinc-950 via-zinc-950/75 to-transparent backdrop-blur-[2px] flex items-end justify-center pb-3.5 md:hidden cursor-pointer"
+                      >
+                        <button
+                          type="button"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            setIsExpanded(true);
+                          }}
+                          className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900/85 hover:bg-zinc-800 text-zinc-100 hover:text-white border border-zinc-700/80 hover:border-zinc-500/80 text-xs sm:text-sm font-semibold backdrop-blur-md shadow-xl shadow-black/60 transition-all active:scale-95 cursor-pointer"
+                        >
+                          <span>Read More</span>
+                          <ChevronDown className="w-4 h-4 text-sky-400 group-hover:translate-y-0.5 transition-transform" />
+                        </button>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+
+              if (isAfterFifth) {
+                return (
+                  <div
+                    key={project.num}
+                    className={
+                      !isExpanded
+                        ? "hidden md:block"
+                        : "block animate-in fade-in duration-300"
+                    }
+                  >
+                    <ProjectCard project={project} />
+                  </div>
+                );
+              }
+
+              return <ProjectCard key={project.num} project={project} />;
+            })}
           </div>
+
+          {isExpanded && filteredProjects.length > 4 && (
+            <div className="mt-8 flex justify-center md:hidden">
+              <button
+                type="button"
+                onClick={handleCollapse}
+                className="group inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-zinc-900/80 hover:bg-zinc-800 text-zinc-300 hover:text-white border border-zinc-700/70 hover:border-zinc-500/70 text-xs sm:text-sm font-semibold backdrop-blur-md shadow-lg transition-all active:scale-95 cursor-pointer"
+              >
+                <span>Show Less</span>
+                <ChevronUp className="w-4 h-4 text-sky-400 group-hover:-translate-y-0.5 transition-transform" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
       <section id="experience" className="py-20 sm:py-24 border-t border-zinc-800/60 relative">
