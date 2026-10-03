@@ -2,7 +2,7 @@
 
 import { FaFlutter } from "react-icons/fa6";
 import { TbBrandReactNative } from "react-icons/tb";
-import { SiDart, SiTypescript, SiLaravel, SiExpress, SiDocker, SiTailwindcss } from "react-icons/si";
+import { SiKotlin, SiSwift, SiLaravel, SiNestjs, SiFastapi, SiDocker, SiTailwindcss } from "react-icons/si";
 import { DiDjango, DiFirebase, DiMysql, DiPostgresql } from "react-icons/di";
 import { RiNextjsFill } from "react-icons/ri";
 import { Sparkles, Smartphone, Server, Database } from "lucide-react";
@@ -15,8 +15,8 @@ export default function SkillsGrid() {
       skills: [
         { name: "Flutter", icon: <FaFlutter className="text-2xl text-sky-400" />, desc: "State management (BLoC/Provider), clean architecture, iOS & Android" },
         { name: "React Native", icon: <TbBrandReactNative className="text-2xl text-cyan-400" />, desc: "Cross-platform mobile apps with React & TypeScript" },
-        { name: "Dart", icon: <SiDart className="text-2xl text-blue-400" />, desc: "Type-safe language for high-performance Flutter apps" },
-        { name: "TypeScript", icon: <SiTypescript className="text-2xl text-blue-500" />, desc: "Static typing for scalable mobile and web codebases" },
+        { name: "Kotlin", icon: <SiKotlin className="text-2xl text-purple-400" />, desc: "Modern language for native Android apps & multiplatform logic" },
+        { name: "Swift", icon: <SiSwift className="text-2xl text-orange-500" />, desc: "Modern language for native iOS apps & SwiftUI development" },
       ],
     },
     {
@@ -25,7 +25,8 @@ export default function SkillsGrid() {
       skills: [
         { name: "Django", icon: <DiDjango className="text-2xl text-emerald-500" />, desc: "Robust Python framework for secure web backends & AI services" },
         { name: "Laravel", icon: <SiLaravel className="text-2xl text-red-500" />, desc: "PHP framework with expressive syntax and elegant ORM" },
-        { name: "Express.js", icon: <SiExpress className="text-2xl text-zinc-300" />, desc: "Minimalist Node.js framework for fast microservices" },
+        { name: "NestJs", icon: <SiNestjs className="text-2xl text-rose-500" />, desc: "Progressive Node.js framework for scalable enterprise backends" },
+        { name: "FastAPI", icon: <SiFastapi className="text-2xl text-teal-400" />, desc: "High-performance Python web framework for modern APIs" },
       ],
     },
     {

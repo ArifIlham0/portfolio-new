@@ -92,7 +92,7 @@ export default function ExperienceTimeline() {
                 </div>
                 <p className="text-sm font-medium text-indigo-400">{edu.degree}</p>
                 <p className="text-sm text-zinc-400 mt-2 leading-relaxed">
-                  Graduated with a solid foundation in software engineering, mobile systems, and data structures.
+                  Designed data preprocessing pipelines, optimized hyperparameter tuning using Silhouette scores, and evaluated spatial density-based versus centroid-based clustering performance. Specialized in Object-Oriented Programming (OOP), SOLID principles, and Clean Architecture to build scalable and maintainable software. Developed full-stack web and mobile systems as part of a cross-functional engineering team.
                 </p>
               </div>
             </div>

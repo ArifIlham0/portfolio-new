@@ -12,7 +12,7 @@ const stats = [
     icon: <Award className="w-5 h-5 text-sky-400" />,
   },
   {
-    num: 8,
+    num: 11,
     suffix: "+",
     label: "Shipped Projects",
     subtext: "Mobile & web apps",

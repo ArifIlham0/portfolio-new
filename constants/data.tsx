@@ -15,35 +15,35 @@ const Data = {
                 company: "Caliana Indonesia",
                 position: "Mobile Apps Developer",
                 duration: "May 2025 - Sep 2026",
-                description: "Develop mobile app for public sector and ISP monitoring platforms, ensuring high availability, offline resilience, and smooth native device performance.",
+                description: "Architected and delivered production-grade cross-platform applications using, successfully operationalizing AI-driven workflows into client-facing features.",
                 highlights: [
-                    "Engineered Banggai Digital Service, a citizen services super-app published on App Store & Google Play with multi-service integration.",
-                    "Built MyZetta internet service monitoring mobile app with live analytics, bill payment, and network status tracking.",
-                    "Integrated real-time RESTful APIs with Fastify and optimized state management using Flutter BLoC/Provider."
+                    "Engineered robust, real-time data streaming architectures by implementing secure RESTful APIs and encrypted WebSockets (Socket.IO), guaranteeing end-to-end data privacy for latency-sensitive AI interactions.",
+                    "Spearheaded release engineering and deployment lifecycles, managing seamless submissions across Google Play Store and Apple App Store while ensuring strict platform guideline compliance and high crash-free rates.",
+                    "Optimized client-side application performance and memory footprints, bridging native bridges and Flutter modules to ensure smooth 60 FPS UI rendering during heavy background computations."
                 ],
-                technologies: ["Flutter", "Firebase", "REST APIs", "Riverpod"]
+                technologies: ["Flutter", "Firebase", "REST APIs"]
             },
             {
                 company: "Maritim Muda Nusantara",
                 position: "Mobile Apps Developer",
                 duration: "Sep 2024 - Jan 2025",
-                description: "Developed collaborative platform connecting young professionals and organizations in Indonesia's maritime sector.",
+                description: 'Led the end-to-end development of "Maritim Muda Connect" from scratch, designing a scalable, modular architecture in Flutter powered by reactive GetX state management.',
                 highlights: [
-                    "Built Maritim Muda Connect mobile application published on Google Play Store.",
-                    "Integrated secure authentication, event registration, and real-time community networking features.",
-                    "Collaborated closely with backend engineers using Laravel to ensure responsive API response times."
+                    "Designed and integrated mission-critical API layers, collaborating closely with the backend team to establish fault-tolerant data pipelines and robust caching strategies for real-time synchronization.",
+                    "Engineered intuitive, responsive UI/UX systems, translating product requirements into high-fidelity design implementations optimized for accessibility and device responsiveness.",
+                    "Championed code quality and engineering standards, enforcing clean architecture separation (presentation, domain, and data layers) to facilitate modularity and future scalability."
                 ],
-                technologies: ["Flutter", "Laravel", "MySQL", "Git", "REST APIs"]
+                technologies: ["Flutter", "Laravel", "MySQL", "REST APIs"]
             },
             {
                 company: "Vocasia",
                 position: "Mobile App Developer",
                 duration: "Feb 2024 - June 2024",
-                description: "Contributed to edtech marketplace and learning management system platform serving thousands of learners across Indonesia.",
+                description: "Spearheaded core mobile feature implementations for an enterprise Learning Management System (LMS) using Flutter and Provider, improving overall app responsiveness and user retention.",
                 highlights: [
-                    "Enhanced mobile user experience for online courses, video streaming, and quiz evaluation modules.",
-                    "Implemented responsive UI components and reduced load times through asset caching and state optimization.",
-                    "Collaborated in a cross-functional team utilizing Agile sprint cycles and CodeIgniter / Next.js backends."
+                    "Streamlined complex backend integration pipelines, orchestrating multi-endpoint RESTful API consumption, pagination mechanisms, and persistent local storage for offline-first learning experiences.",
+                    "Refactored UI component libraries and navigation structures, resulting in enhanced user journeys, lower rendering latency, and a consistent multi-platform design system.",
+                    "Collaborated actively in Scrum ceremonies and peer code reviews, identifying performance bottlenecks and minimizing regression bugs prior to staging deployments."
                 ],
                 technologies: ["Flutter", "Next.js", "CodeIgniter 4", "MySQL", "Firebase"]
             },

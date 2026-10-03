@@ -64,8 +64,8 @@ export default function Home() {
               <p className="text-lg sm:text-xl font-medium text-zinc-300 mb-4">
                 Mobile AI Engineer
               </p>
-              <p className="text-sm sm:text-base text-zinc-400 max-w-xl mb-8 leading-relaxed">
-                With 3 years of production experience, I build high-performance iOS and Android applications using <span className="text-zinc-200 font-semibold">Flutter</span> and <span className="text-zinc-200 font-semibold">React Native</span>, supported by robust backend architectures with <span className="text-zinc-200 font-semibold">Django</span>, <span className="text-zinc-200 font-semibold">PostgreSQL</span>, and modern AI integrations. Multiple applications successfully shipped to App Store and Google Play.
+              <p className="text-sm sm:text-base text-zinc-400 max-w-xl mb-8 leading-relaxed text-justify">
+                Mobile AI Engineer with 3 years of experience building scalable iOS and Android applications using <span className="text-zinc-200 font-semibold">React Native</span> and <span className="text-zinc-200 font-semibold">Flutter</span>. Experienced in AI integration and backend development with <span className="text-zinc-200 font-semibold">Django</span>, <span className="text-zinc-200 font-semibold">FastAPI,</span> and <span className="text-zinc-200 font-semibold">PostgreSQL</span>, with a strong focus on performance, maintainability, reliability, and measurable user impact.
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-8 w-full sm:w-auto">
                 <a
