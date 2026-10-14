@@ -21,7 +21,7 @@ const Data = {
                     "Spearheaded release engineering and deployment lifecycles, managing seamless submissions across Google Play Store and Apple App Store while ensuring strict platform guideline compliance and high crash-free rates.",
                     "Optimized client-side application performance and memory footprints, bridging native bridges and Flutter modules to ensure smooth 60 FPS UI rendering during heavy background computations."
                 ],
-                technologies: ["Flutter", "Firebase", "REST APIs"]
+                technologies: ["Flutter", "React Native", "Firebase", "REST APIs"]
             },
             {
                 company: "Maritim Muda Nusantara",
