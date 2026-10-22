@@ -51,21 +51,21 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="flex flex-col-reverse lg:flex-row items-center justify-between gap-12 lg:gap-16">
             <div className="flex-1 flex flex-col items-center lg:items-start text-center lg:text-left">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 font-medium mb-6 shadow-sm">
+              {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-zinc-900 border border-zinc-800 text-xs text-zinc-300 font-medium mb-6 shadow-sm">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
                   <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
                 </span>
                 <span>Open to Work</span>
-              </div>
+              </div> */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white mb-5 leading-[1.1]">
                 Hi, I&apos;m <span className="bg-linear-to-r from-sky-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent">Arif Ilham</span>
               </h1>
               <p className="text-lg sm:text-xl font-medium text-zinc-300 mb-4">
-                Mobile AI Engineer
+                Mobile Engineer
               </p>
               <p className="text-sm sm:text-base text-zinc-400 max-w-xl mb-8 leading-relaxed text-justify">
-                Mobile AI Engineer with 3 years of experience building scalable iOS and Android applications using <span className="text-zinc-200 font-semibold">React Native</span> and <span className="text-zinc-200 font-semibold">Flutter</span>. Experienced in AI integration and backend development with <span className="text-zinc-200 font-semibold">Django</span>, <span className="text-zinc-200 font-semibold">FastAPI,</span> and <span className="text-zinc-200 font-semibold">PostgreSQL</span>, with a strong focus on performance, maintainability, reliability, and measurable user impact.
+                Mobile Engineer with 3 years of experience building scalable iOS and Android applications using <span className="text-zinc-200 font-semibold">Flutter</span> and <span className="text-zinc-200 font-semibold">Kotlin</span>. Experienced in AI integration and backend development with, <span className="text-zinc-200 font-semibold">FastAPI,</span> and <span className="text-zinc-200 font-semibold">PostgreSQL</span>, with a strong focus on performance, maintainability, reliability, and measurable user impact.
               </p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-3.5 mb-8 w-full sm:w-auto">
                 <a

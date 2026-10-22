@@ -26,7 +26,7 @@ const MobileNavBar = () => {
               <span>Arif Ilham</span>
               <span className="text-sky-400">.</span>
             </SheetTitle>
-            <p className="text-xs text-zinc-400">Mobile AI Engineer</p>
+            <p className="text-xs text-zinc-400">Mobile Engineer</p>
           </SheetHeader>
 
           <nav className="flex flex-col gap-2">

@@ -5,15 +5,15 @@ const ProjectLists = {
             category: "Mobile App",
             title: "Banggai Digital Service",
             description: "One App for Multiple Solutions and Citizen Services in Banggai Regency.",
-            // image: "/assets/banggai-digital-service.png",
-            image: "/assets/banggai-digital-service-fake.jpeg",
+            image: "/assets/banggai-digital-service.png",
+            // image: "/assets/banggai-digital-service-fake.jpeg",
             app_store: "https://apps.apple.com/id/app/banggai-digital-service/id6754150070",
             play_store: "https://play.google.com/store/apps/details?id=id.caliana.digitalServiceBanggai",
             website: null,
             stack: [
                 {
-                    // name: "Flutter",
-                    name: "React Native",
+                    name: "Flutter",
+                    // name: "React Native",
                 },
                 {
                     name: "Fastify",
@@ -31,14 +31,14 @@ const ProjectLists = {
             category: "Mobile App",
             title: "MyZetta",
             description: "A dedicated app to monitor your Zetta internet service more efficiently.",
-            // image: "/assets/myzetta.png",
-            image: "/assets/myzetta-fake.jpeg",
+            image: "/assets/myzetta.png",
+            // image: "/assets/myzetta-fake.jpeg",
             app_store: "https://apps.apple.com/id/app/myzetta/id6740265889",
             play_store: "https://play.google.com/store/apps/details?id=id.caliana.zetta",
             stack: [
                 {
-                    // name: "Flutter",
-                    name: "React Native",
+                    name: "Flutter",
+                    // name: "React Native",
                 },
                 {
                     name: "Fastify",

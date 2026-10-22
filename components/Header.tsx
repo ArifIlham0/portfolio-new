@@ -23,13 +23,13 @@ const Header = () => {
             </span>
             <span className="text-sky-400 text-2xl font-black">.</span>
           </Link>
-          <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
+          {/* <div className="hidden sm:inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-950/40 border border-emerald-500/30 text-emerald-400 text-xs font-medium">
             <span className="relative flex h-2 w-2">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500" />
             </span>
             <span>Open to Work</span>
-          </div>
+          </div> */}
         </div>
         <div className="hidden md:flex items-center gap-8">
           <NavBar />

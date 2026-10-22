@@ -9,8 +9,16 @@ const Data = {
     experiences: {
         icon: "/assets/badge.svg",
         title: "Work Experience",
-        description: "Over the past 2+ years, I have engineered scalable mobile applications and backend services, successfully shipping multiple apps to the App Store and Google Play Store.",
+        description: "Over the past 3+ years, I have engineered scalable mobile applications and backend services, successfully shipping multiple apps to the App Store and Google Play Store.",
         items: [
+            {
+                company: "PT Bank Tabungan Negara (Persero) Tbk",
+                position: "Android Developer",
+                duration: "Oct 2026 - Present",
+                description: "",
+                highlights: [],
+                technologies: ["Kotlin", "XML", "REST APIs"]
+            },
             {
                 company: "Caliana Indonesia",
                 position: "Mobile Apps Developer",
@@ -21,7 +29,7 @@ const Data = {
                     "Spearheaded release engineering and deployment lifecycles, managing seamless submissions across Google Play Store and Apple App Store while ensuring strict platform guideline compliance and high crash-free rates.",
                     "Optimized client-side application performance and memory footprints, bridging native bridges and Flutter modules to ensure smooth 60 FPS UI rendering during heavy background computations."
                 ],
-                technologies: ["Flutter", "React Native", "Firebase", "REST APIs"]
+                technologies: ["Flutter", "Firebase", "REST APIs"]
             },
             {
                 company: "Maritim Muda Nusantara",
@@ -51,8 +59,8 @@ const Data = {
     },
     about: {
         title: "About Me",
-        headline: "Mobile AI Engineer focused on craftsmanship, performance, and user impact.",
-        description: "I am a Mobile AI Engineer with 2+ years of production experience building high-performance iOS and Android applications with Flutter and React Native. With a solid backend foundation across Fastify, Django, and Laravel, I bridge the gap between complex server architectures and intuitive mobile interfaces. I have successfully published and maintained apps on both the Apple App Store and Google Play Store, and I actively leverage modern AI APIs to build smarter user experiences.",
+        headline: "Mobile Engineer focused on craftsmanship, performance, and user impact.",
+        description: "I am a Mobile Engineer with 3+ years of production experience building high-performance iOS and Android applications with Flutter and React Native. With a solid backend foundation across Fastify, Django, and Laravel, I bridge the gap between complex server architectures and intuitive mobile interfaces. I have successfully published and maintained apps on both the Apple App Store and Google Play Store, and I actively leverage modern AI APIs to build smarter user experiences.",
         info: [
             {
                 field_name: "Name",
@@ -60,7 +68,7 @@ const Data = {
             },
             {
                 field_name: "Role",
-                field_value: "Mobile AI Engineer",
+                field_value: "Mobile Engineer",
             },
             {
                 field_name: "Experience",
